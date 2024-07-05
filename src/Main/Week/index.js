@@ -1,16 +1,33 @@
+const weekdays = [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+];
+
+const weekends = [
+    "Sat",
+    "Sun"
+]
+
 export default function Week() {
+    
     return (
         <div className="d-flex p-4">
             <div className="mod m-auto">
                 <div className="d-flex p-4">
                     <div className="week d-flex m-auto">
-                        <div className="weekdays">Mon</div>
-                        <div className="weekdays">Tue</div>
-                        <div className="weekdays">Wed</div>
-                        <div className="weekdays">Thu</div>
-                        <div className="weekdays">Fri</div>
-                        <div className="weekend">Sat</div>
-                        <div className="weekend">Sun</div>
+                        {
+                            weekdays.map((day, index) => (
+                                <div className="weekday" key={index}>{day}</div>
+                            ))
+                        }
+                        {
+                            weekends.map((day, index) => (
+                                <div className="weekend" key={5+index}>{day}</div>
+                            ))
+                        }
                     </div>
                 </div>
                 <div className="line"></div>
