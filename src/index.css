@@ -34,6 +34,10 @@ body {
     color: #fff;
 }
 
+.weekday.selected {
+    background-color: #003f92;
+}
+
 .weekend {
     width: 50px;
     height: 50px;
@@ -43,6 +47,10 @@ body {
     align-items: center;
     justify-content: center;
     color: #fff;
+}
+
+.weekend.selected {
+    background-color: #1555a9;
 }
 
 .line {
