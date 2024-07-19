@@ -1,59 +1,64 @@
 body {
-    margin: 0;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-  }
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
 
-  .header-title {
-    text-align: center;
-    font-weight: 900;
-    font-size: 47px;
-    color: #082079;
-  }
+.header-title {
+  text-align: center;
+  font-weight: 900;
+  font-size: 47px;
+  color: #082079;
+}
 
 .mod {
-    width: 800px;
-    height: 400px;
-    border: 1px solid #dadada;
-    border-radius: 15px;
-    box-shadow: inset 1px 2px 33px -15px rgba(66, 68, 90, 1);
+  width: 800px;
+  height: 400px;
+  border: 1px solid #dadada;
+  border-radius: 15px;
+  box-shadow: inset 1px 2px 33px -15px rgba(66, 68, 90, 1);
 }
 
 .week div {
-    margin-right: 3em;
+  margin-right: 3em;
 }
 
 .weekday {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #4f8dde;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #4f8dde;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
 }
 
 .weekday.selected {
-    background-color: #003f92;
+  background-color: #003f92;
 }
 
 .weekend {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #b0d1fc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #b0d1fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
 }
 
 .weekend.selected {
-    background-color: #1555a9;
+  background-color: #1555a9;
 }
 
 .line {
-    border-bottom: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+}
+
+.scheduler-line {
+  align-items: center;
+  justify-content: space-between;
 }
 

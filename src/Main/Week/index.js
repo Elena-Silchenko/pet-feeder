@@ -1,44 +1,40 @@
-import {useState} from "react";
+import { useState } from 'react'
 
 const weekdays = [
-    "Mon",
-    "Tue",
-    "Wed",
-    "Thu",
-    "Fri"
-];
-
-const weekends = [
-    "Sat",
-    "Sun"
+  'Mon',
+  'Tue',
+  'Wed',
+  'Thu',
+  'Fri'
 ]
 
-export default function Week() {
-    const [selectedDay, setSelectedDay] = useState("");
+const weekends = [
+  'Sat',
+  'Sun'
+]
 
-    function handleClickDay(day) {
-        setSelectedDay(day)
-    }
+export default function Week () {
+  const [selectedDay, setSelectedDay] = useState('')
 
-    return (
-        <div className="d-flex p-4">
-            <div className="mod m-auto">
-                <div className="d-flex p-4">
-                    <div className="week d-flex m-auto">
-                        {
-                            weekdays.map((day, index) => (
-                                <div className={`weekday ${selectedDay === day ? "selected" : ""}`} key={index} onClick={() => handleClickDay(day)}>{day}</div>
-                            ))
-                        }
-                        {
-                            weekends.map((day, index) => (
-                                <div className={`weekend ${selectedDay === day ? "selected" : ""}`} key={5+index} onClick={() => handleClickDay(day)}>{day}</div>
-                            ))
-                        }
-                    </div>
-                </div>
-                <div className="line"></div>
-            </div>
-        </div>
-    );
+  function handleClickDay (day) {
+    setSelectedDay(day)
+  }
+
+  return (
+    <div className='d-flex p-4'>
+      <div className='week d-flex m-auto'>
+        {
+          weekdays.map((day, index) => (
+            <div className={`weekday ${selectedDay === day ? 'selected' : ''}`} key={index} onClick={() => handleClickDay(day)}>{day}</div>
+          ))
+        }
+        {
+          weekends.map((day, index) => (
+            <div className={`weekend ${selectedDay === day ? 'selected' : ''}`} key={5 + index} onClick={() => handleClickDay(day)}>{day}</div>
+          ))
+        }
+      </div>
+    </div>
+  
+  )
 }
